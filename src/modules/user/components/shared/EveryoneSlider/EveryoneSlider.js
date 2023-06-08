@@ -1,15 +1,15 @@
 import React,{ useState,useEffect } from "react";
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
-import './StudentSlider.css';
-import Cards from "../StudentCard/StudentCard";
+import './EveryoneSlider.css';
+import Cards from "../EveryoneCard/EveryoneCard";
 import axios from "axios";
 import URL from "../../../../../config/URL";
 
  const AppSlider = ()=>{
     let [data, setData]=useState([]);
     let fetchData = async()=>{
-        let response = await axios.get(`${URL}/student`)
+        let response = await axios.get(`${URL}/everyone`)
         // console.log(response.data)
         setData(response.data)
     }
@@ -56,7 +56,7 @@ import URL from "../../../../../config/URL";
 
     return(
         <div className="App mt-5 pt-5 mb-5">
-            <h1>Students Products</h1>
+            <h1>Everyone Products</h1>
             <Carousel
             responsive={responsive}
             // swipeable={false}

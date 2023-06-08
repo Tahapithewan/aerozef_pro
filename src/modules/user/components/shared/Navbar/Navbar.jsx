@@ -45,7 +45,7 @@ const Navbar = () => {
         <NavLink className="closebtn" onClick={closeNav}>&times;</NavLink>
         <NavLink to="applicants">Applicants</NavLink>
         <NavLink to="student">Student</NavLink>
-        <NavLink to="settings">Settings</NavLink>
+        <NavLink to="everyone">EveryOne</NavLink>
     </div>
     </>
   )
