@@ -1,44 +1,4 @@
-.NavBar {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
 
-    position: absolute;
-    width: 1440px;
-    height: 152px;
-    left: 0px;
-    top: 0px;
-}
-.Brand{    
-    width: 165px;
-    height: 42px;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-.forty{
-    position: absolute;
-    left: 1.12%;
-    right: 80.45%;
-    top: 1.8%;
-    bottom: 1.8%;
-
-    background: #FFFFFF;
-}
-.two{
-    position: absolute;
-    left: 22.9%;
-    right: 61.26%;
-    top: -0.03%;
-    bottom: 1.83%;
-
-    background: #FFFFFF;
-}
 /* The sidepanel menu */
 .sidepanel {
     height: 100%; /* Specify a height */

@@ -2,7 +2,7 @@ import React,{ useState,useEffect } from "react";
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
 import './AppSlider.css';
-import Cards from "../MyCards/Cards";
+import Cards from "../AppCard/AppCard";
 import axios from "axios";
 import URL from "../../../../../config/URL";
 
@@ -40,12 +40,17 @@ import URL from "../../../../../config/URL";
       
       const product = data.map((item,index)=>{
         return(
+          <>
+          <div key={index}>
+
             <Cards
-            id={item.id}
+            id={item._id}
             image={item.image}
             heading={item.heading}
             description={item.description}
             />
+            </div>
+          </>
             )
     });
 

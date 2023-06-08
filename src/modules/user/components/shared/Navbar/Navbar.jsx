@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className="navbar navbar-expand-md navbar-dark bg-dark">
         <button className="openbtn bg-dark" onClick={openNav}>&#9776; </button>
         <NavLink className="navbar-brand" to="/"> <h3 style={{float : 'left'}}>42</h3></NavLink>
-        <NavLink className="navbar-brand" to="/"><span style={{}}>Berlin</span></NavLink>
+        <NavLink className="navbar-brand" to="/"><span>Berlin</span></NavLink>
         <button className="navbar-toggler" data-toggle="collapse" data-target="#NavId" >
             <span className="navbar-toggler-icon"></span>
         </button>
@@ -42,7 +42,7 @@ const Navbar = () => {
     {/* sidebar */}
     
     <div id="mySidepanel" className="sidepanel">
-        <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
+        <NavLink className="closebtn" onClick={closeNav}>&times;</NavLink>
         <NavLink to="applicants">Applicants</NavLink>
         <NavLink to="student">Student</NavLink>
         <NavLink to="settings">Settings</NavLink>
